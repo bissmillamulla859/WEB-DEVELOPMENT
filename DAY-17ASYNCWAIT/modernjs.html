@@ -7,23 +7,36 @@
 </head>
 <body>
     <script>
-        //template string-var orr parameter allow with text
-        var a = "john"
-        //old way
-        console.log("my name is",a)
-        //new way $(var name/parameter)
-        console.log("my name is ${a}")
+        //Template String - Varibale or parameter along with Text
 
-        //arrow function-function logic in one line
-        //pld way function
+        var a = "John"
+
+         //Old Way
+        console.log("My Name is " , a)
+
+        //New Way- ${variableName/Paramter}
+        console.log(` My Name is ${a}  `)
+
+
+        //Arrow Function - Function Logic in one line
+
+        //old way - function
+
         function xyz(){
-            console.log("hello")
+            console.log("Hello I am Old Function")
         }
-        //new way
-        var abc= ()->{
-            console.log("hello i am function")
-        }
-        abc()
+        xyz()
+
+       //New Way 
+
+     var abc =  ()=>{
+        console.log("Hello I am Arrow Function")
+       }
+
+       abc()
+
+
+
     </script>
 </body>
 </html>

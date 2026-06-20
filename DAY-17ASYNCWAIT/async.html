@@ -7,22 +7,33 @@
 </head>
 <body>
     <script>
-        //task 1-malke cofee
-        functionstarttask(){
-            console.log("step 1 : boil water ,5sec")
-            //time to the function - time 1000 - 1 sec
-            //setTimeout(function()){
-            //Task
-            //}
-            setTimeout(){
-                console.log("step 2 : water is ready",5000)
+        //Task 1 : Make Coffe - 10 sec
 
-            }
-            console.log("step 3 : doing")
+        function StartTask(){ 
+            console.log("Step 1 : Boil Water - 5 sec")
+
+
+            //Timer To The Function - Time 1000 - 1 sec
+            // setTimeout(function(){
+              //Task
+            // },Time)
+
+            setTimeout(function(){
+                console.log("Step 2 : Water is Ready")
+            },5000)
+
+            console.log("Step 3: Doing Other Task As well")
+        }
+        StartTask()
+
+
+        //Task 2: - 2 sec
+
+        function greeting(name){
+            console.log('Hii Good Evening ' , name)
         }
 
-        //task 2 
-        
+        greeting("Ayush")
     </script>
 </body>
 </html>

@@ -7,14 +7,25 @@
 </head>
 <body>
     <script>
-        //https://randomuser.me/api
-        //fetch("API Address") fetch from api
-        //rule : convert the response into JSON
+        // https://randomuser.me/api
+
+
+        //  fetch("Api Address")  fetch Data from API
+
+        // Rule : Convert The response into JSON - .json()
+
         fetch("https://randomuser.me/api")
-        //succesful
-        .then(response->console.log(response))
-        //error
-        .catch(error -> console.log("Error connection",error));
+
+
+        //Successfull
+          .then( response  =>  response.json()  )
+
+          .then(data => console.log(data)  )
+
+        //Error- Problem
+         .catch( error =>  console.log("Error Connection " , error)           )
+
+
 
     </script>
 </body>
