@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <! DOM helps us to connect html and js>
+    <p id="nyp">Hello Good Evening</p>
+    <button id="btn">Login</button>
+
+    <div class="nyc">this is div of shopping</div>
+    <div class="nyc">this is div of gaming</div>
+    
+    <p>Hello Good morning</p>
+    <p>Hello Good Afternoon</p>
+
+    <div class="xyz">AMAZON E-COMMERCE</div>
+    <div class="xyz">NETFLIX</div>
+    <script>
+        //select html tag using selecting method
+        //element -tag
+        //document webpage
+        //1.id-getElementByid("id value")-we can use var let
+        var ele = document.getElementById("nyp")//selected the tag with idname in js
+        console.log(ele)
+
+        const ele1 = document.getElementById("btn")
+        console.log(ele1)
+
+
+
+        //.textcontent - give content of tag
+        console.log(ele1.textContent)
+
+        //class- getelementsByClassName(classname)
+        const ele2 = document.getElementsByClassName("nyc")
+        console.log(ele2)
+        console.log(ele2)
+        console.log(ele2[1]).textContent
+
+
+        //3.Tagname-getElemenbytagname("Tagname")
+        const ele3 = document.getElementsByTagName("p")
+        console.log(ele3)
+        console.log(ele3[1]).textContent
+
+
+        //4.queryselector() -css selector rule  #idname, .class,Tagname
+        const ele4 = document.querySelector(".xyz")
+        console.log(ele4)
+
+        //queyselectorall("")
+        //select all element
+        const ele5 = document.querySelectorAll(".xyz")
+        console.log(ele5)
+
+
+    </script>
+</body>
+</html>

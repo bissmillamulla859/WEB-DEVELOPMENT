@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text">Hello Everyone</p>
+    <button id="btn">Login</button>
+
+    <div id="mydiv">This is DIV</div>
+
+    <p id="myp">This is my p</p>
+
+    <script>
+        //select html element 
+
+    //1.update the text content
+     const paragraph =   document.getElementById("text")
+     paragraph.textContent = "HELLO EVERYONE welcome to DOM"
+     console.log(paragraph) 
+     
+    const button = document.getElementById("btn")
+    button.textContent="Logout"
+
+    //innerHTML-help us to update content of tag
+    const div = document.getElementById("mydiv")
+
+    console.log("div")
+    //div.innerHTML = "<h1>this is new heading</h1>"
+    div.innerHTML = 
+    <p id="myp">Hello this is <mark>updated</mark></p>
+    <button>smile</button>
+
+
+    //.style.propertyname
+    
+
+
+    </script>
+</body>
+</html>
